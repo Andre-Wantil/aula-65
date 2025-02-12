@@ -1,6 +1,7 @@
 export default interface IClass {
     id:number
     name:string
+    room:string
     capacity:number
     students:number
     day:string

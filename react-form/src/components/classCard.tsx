@@ -1,10 +1,10 @@
 import IClass from '../interfaces/IClass';
 
 interface IClassCardProps {
-    turma:IClass
+    turma: IClass
 }
 
-export default function ClassCard({ turma }:IClassCardProps) {
+export default function ClassCard({ turma }: IClassCardProps) {
     return (
         <div>
             <div>
@@ -12,8 +12,12 @@ export default function ClassCard({ turma }:IClassCardProps) {
                 <strong>{turma.students}/{turma.capacity}</strong>
             </div>
             <div>
-                <h3>{turma.day}</h3>
-                <strong>{String(turma.hour)}h</strong>
+                <h3>{turma.room}</h3>
+
+                <div>
+                    <h4>{turma.day}</h4>
+                    <strong>{String(turma.hour)}h</strong>
+                </div>
             </div>
         </div>
     )
